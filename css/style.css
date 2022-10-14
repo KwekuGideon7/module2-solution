@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+
+}
+.title{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;;
+
+}
+
+.wrapper{
+    width: 100%;
+    margin: -15px;
+    padding-left: 27px;
+    
+}
+
+.main{
+    margin-left: 10px;
+    border: 2px solid black;
+    height:auto;
+    padding: 30px 10px 10px 10px;
+    background-color: grey;
+}
+
+.content-1{
+    position: relative;
+    margin-top: 10px;;
+}
+
+.inner{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    width:100px;
+    border:2px solid black;
+    text-align: center;
+    padding:3px 0px;
+}
+
+.one{
+background-color: tomato;
+}
+.two{
+background-color: red;
+}
+.three{
+    background-color: yellow;
+}
+
+
+@media (min-width: 992px){
+    .content-1{
+        width: 33.33%;
+        float: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .content-2, .content-3{
+        float: left;
+    }
+    .content-2{
+        width: 50%;
+    }
+    .content-3{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767px){
+    .content-4{
+        width: 100%;
+    }
+}
